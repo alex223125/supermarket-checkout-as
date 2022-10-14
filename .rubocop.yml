@@ -1,0 +1,25 @@
+require:
+  - rubocop-performance
+  - rubocop-rspec
+
+AllCops:
+  TargetRubyVersion: 2.7.2
+  Include:
+    - 'config/**/*'
+    - 'lib/**/*'
+    - 'spec/**/*'
+    - 'Gemfile'
+
+Documentation:
+  Enabled: false
+
+Metrics/BlockLength:
+  Exclude:
+    - 'Guardfile'
+
+Naming/FileName:
+  Exclude:
+    - 'Gemfile'
+
+RSpec/MultipleMemoizedHelpers:
+  Enabled: false
